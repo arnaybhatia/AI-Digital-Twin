@@ -39,7 +39,7 @@ def main(input_path):
 
     index = VectorStoreIndex.from_documents(documents)
     query_engine = index.as_query_engine()
-    response = query_engine.query("Write 3-4 minute script for a person to read that summarizes the data. Then generate 3 questions that might be asked on the text and answers those questions.")
+    response = query_engine.query("Please make a 5 minutes script for a presentation with a question and answer at the end. This script will be read outloud as it is. Write out all abriviations like Q and AI as full words.")
     print(response)
 
 if __name__ == "__main__":
